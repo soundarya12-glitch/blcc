@@ -1,0 +1,657 @@
+body {
+ 
+    background-size: cover; /* Make the image cover the whole page */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Fix the image when scrolling */
+  }
+  .scrolling-text-container {
+    height: 100px; /* Set the height of the container */
+    overflow: hidden; /* Hide content outside the container */
+    position: relative;
+  }
+  header{
+    background: linear-gradient(to bottom, #2b2e4a, #53354a, #903749);
+  }
+ 
+
+  .scrolling-text {
+    position: absolute;
+    width: 100%;
+    animation: scroll-up 20s linear infinite; /* Adjust duration for each paragraph */
+  }
+
+  .scrolling-text p {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    font-size:55px;
+    color:#ff7eb3; /* First hover color */
+    text-shadow: 2px 2px 5px #ff7eb3,;
+ 
+
+  }
+
+
+    @keyframes scroll-up {
+        0% {
+          transform: translateY(50%); /* Start from the bottom */
+        }
+    
+        50% {
+          transform: translateY(-100%); /* Move all five paragraphs out and loop back */
+        }
+      }
+    
+.nav-link {
+  font-size: 20px;
+  color: white; /* Default color */
+  transition: color 0.3s ease;
+    
+  }
+  .nav-link:hover{
+    color:#007bff; /* First hover color */
+    text-shadow: 2px 2px 5px #007bff;
+  }
+  h1{
+  margin-top:60px ;
+    font-size:40px ;
+    text-align: center;
+  
+}
+h2{
+  text-align: center;
+  margin-top:30px ;
+
+}
+h2:hover{
+  color:#007bff; /* First hover color */
+  text-shadow: 2px 2px 5px #007bff;
+}
+p{
+    font-size:39px;
+    color:white ;
+
+}
+.pill-button {
+    padding: 20px 60px;
+    font-size: 26px;
+    color: white;
+    background: linear-gradient(to right, #ff7eb3, #ff758c);
+    border: none;
+    border-radius: 150px; /* Pill shape */
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    margin:20px ;
+  }
+
+  .pill-button:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    background: linear-gradient(to right, #28a745, #007bff);
+  }
+  .pil-button {
+    padding: 12px 15px;
+    font-size: 20px;
+    color: white;
+    background: linear-gradient(to right, #ff7eb3, #ff758c);
+    border: none;
+    border-radius: 150px; /* Pill shape */
+    cursor: pointer;
+    transition: transform 0.2s ease;
+
+  }
+  @media (max-width: 768px) {
+    .pil-button {
+      width: 40%; /* Button takes full width on smaller screens */
+      padding: 15px;
+      font-size: 1em;
+    }
+  }
+
+  .pil-button:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    background: linear-gradient(to right, #28a745, #007bff);
+
+  }
+
+.pillss-button {
+  padding: 25px 35px;
+  font-size: 20px;
+  color: white;
+  background: linear-gradient(to right, #ff7eb3, #ff758c);
+  border: none;
+  border-radius: 50px; /* Pill shape */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  
+
+}
+@media (max-width: 768px) {
+  .pillss-button {
+    width: 100%; /* Button takes full width on smaller screens */
+    margin-bottom:20px ;
+    font-size: 1em;
+  }
+}
+
+.pillss-button:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+  background: linear-gradient(to right, #28a745, #007bff);
+
+}
+
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .blinking-icon {
+    animation: blink 4s infinite;
+  }
+
+  /* Position the icon at the bottom-left of the screen */
+  .whatsapp-icon {
+    position: fixed;
+    bottom: 300px;
+    left: 25px;
+    font-size: 40px;
+ 
+  }
+  .whatsapp-icon:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+   
+    color: #25d366;
+  }
+  .linked-icon {
+    position: fixed;
+    bottom: 230px;
+    left: 25px;
+    font-size: 10px;
+    color: #25d366; /* WhatsApp green */
+  } 
+  .tele-icon {
+    position: fixed;
+    bottom: 150px;
+    left: 25px;
+    font-size: 10px;
+    color: #25d366; /* WhatsApp green */
+  } 
+
+  .gmail-icon{
+    position: fixed;
+    bottom: 80px;
+    left: 25px;
+    font-size: 10px;
+    color: #25d366;
+  }
+  .sky-icon{
+    position: fixed;
+    bottom: 10px;
+    left: 20px;
+    font-size: 10px;
+    color: #25d366;
+  }
+  header {
+    text-align: center;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px;
+  }
+  
+  .navbar .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .navbar .navbar-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .navbar .navbar-links li {
+    margin: 0 15px;
+  }
+  
+  .navbar .navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar .navbar-links a:hover {
+    color:#007bff; /* First hover color */
+    text-shadow: 2px 2px 5px #007bff;
+  }
+  
+  .navbar .menu-toggle {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 900px) {
+    .navbar .navbar-links {
+      display: none;
+      flex-direction:column;
+      align-items:center;
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .navbar .navbar-links.active {
+      display: flex;
+    }
+  
+    .navbar .menu-toggle {
+      display: block;
+    }
+  
+    .navbar .navbar-links li {
+      margin: 10px 0;
+    }
+  }
+
+  
+  .static-image {
+    margin: 100px auto 0; /* Place below navbar */
+    text-align: center;
+  }
+
+  .static-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+background-color:blanchedalmond ;
+    text-align: center;
+    margin-top:70px ;
+    margin-bottom:150px ;
+    margin-left:80px ;
+    margin-right:50px ;
+  }
+  
+  .stat-item {
+    margin-bottom: 10px;
+  }
+  
+  .stat-item h1 {
+    font-size: 3rem;
+    color:black;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stat-item p {
+    font-size: 1.2rem;
+    color:black;
+  }
+  @media (max-width: 768px) {
+    .stats {
+      flex-direction: column;
+    }
+  
+    .stat-item {
+      margin: 1rem 0;
+    }
+  }  
+  .section {
+    display: flex;
+    align-items: center;
+    padding: 1px;
+    gap: 20px;
+    margin-bottom:0px ;
+  }
+
+  .section img {
+    width: 40%;
+    height: auto;
+    border-radius: 10px; /* Optional: rounded corners */
+  }
+
+  .section .text {
+    width: 60%;
+    text-align: left;
+  }
+
+  .section .text h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+  .section .text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color:black;
+    margin-top:30px ;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .section {
+      flex-direction: column; /* Stack image and text */
+      text-align: center; /* Center text for small screens */
+    }
+
+    .section img,
+    .section .text {
+      width: 100%; /* Full width for both image and text */
+    }
+
+    .section .text {
+      margin-top: 20px; /* Add spacing between image and text */
+    }
+  }
+  @media (max-width: 768px) {
+    .pills-button {
+      width: 20%; /* Button takes full width on smaller screens */
+      padding: 15px;
+      font-size: 1em;
+    }
+  }
+  
+.pills-button {
+    padding: 20px 60px;
+    font-size: 20px;
+    color: white;
+    background: linear-gradient(to right, #ff7eb3, #ff758c);
+    border: none;
+    border-radius: 50px; /* Pill shape */
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    margin-left:200px ;
+    margin-top:4px ;
+    
+  }
+  .pills-button:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    background: linear-gradient(to right, #28a745, #007bff);
+
+  }
+  
+  .help-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(to right, #ff7eb3, #ff758c);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 2em;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+    z-index: 1000;
+    animation: blink 4s infinite;
+  }
+
+  .help-button:hover {
+    background: linear-gradient(to right, #28a745, #007bff);
+    transform: scale(1.1);
+  }
+
+  /* Chat Box */
+  .chat-box {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    z-index: 1001;
+    
+  }
+
+  .chat-header {
+    background: linear-gradient(to bottom, #2b2e4a, #53354a, #903749);
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  .chat-messages {
+    padding: 10px;
+    height: 200px;
+    overflow-y: auto;
+    font-size: 0.9em;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .chat-messages p {
+    margin: 5px 0;
+  }
+
+  .chat-input {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .chat-input input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+
+  .chat-input button {
+    background: linear-gradient(to right, #ff7eb3, #ff758c);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+   
+  }
+
+  .chat-input button:hover {
+    background: linear-gradient(to right, #28a745, #007bff);
+  }
+  .image-container {
+    position: static;
+    width: 400%; /* Ensures the container spans the full width */
+    max-width: 100%; /* Prevents overflow on smaller screens */
+    overflow: hidden;
+    height:4000px ; /* Hides any overflowed content */
+  }
+  
+  .full-width-image {
+    width: 100%; /* Makes the image span the full width of the container */
+    /* Maintains the aspect ratio */
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%; /* Centers text vertically */
+    left: 50%; /* Centers text horizontally */
+    transform: translate(-50%, -50%); /* Adjusts for the text dimensions */
+    color: white; /* Text color for contrast */
+    font-size: 24px; /* Adjust font size as needed */
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Makes text stand out */
+    text-align: center;
+  }
+  .styled-list{
+    font-size:25px ;
+
+  }
+  .styled-list li{
+    font-size:30px ;
+    line-height: 1.6;
+
+  }
+
+  .styled-list li:hover{
+    color:#007bff; /* First hover color */
+    text-shadow: 2px 2px 5px #007bff;
+  }
+  .highlighted-text {
+    font-size:200px; /* Increase the font size */
+   /* Add a light background */
+    padding: 10px; /* Add some inner spacing */
+    /* Add a decorative left border */
+    font-family: Arial, sans-serif; /* Change the font */
+    line-height: 1.6; /* Adjust line spacing */
+  }
+ 
+  .navbars {
+    background: linear-gradient(to right, #28a745, #007bff);
+    overflow: hidden;
+  }
+  .navbars a {
+    color:white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+  }
+  .navbars a:hover {
+    color:#ff7eb3; /* First hover color */
+    text-shadow: 2px 2px 5px #ff7eb3;
+  }
+  .navbars a{
+    font-size:30px ;
+    margin-left:100px ;
+  }
+
+
+  #content {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .page {
+    display: none;
+  }
+
+  .active-page {
+    display: block;
+  }
+  .navbarss {
+    background-color: #333;
+    overflow: hidden;
+  }
+  .navbarss a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: left;
+  }
+  .navbarss a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  #content {
+    padding: 20px;
+    text-align: left;
+  }
+
+
+  .page {
+    display: none;
+  }
+
+  .active-page {
+    display: block;
+  }
+
+  .box {
+    width: 28%;  /* Width of each box */
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-right:150px ;
+    margin-left:50px ;
+    height: 100px;
+  }
+
+  .box h3 {
+    margin-top: 0;
+    color: #333;
+  }
+
+  .box p {
+    color: #666;
+  }
+
+  /* Responsive Design for smaller screens */
+  @media (max-width: 768px) {
+    .box {
+      width: 100%;  /* Stack boxes vertically on smaller screens */
+    }
+  }
+  .para{
+    font-size:large;
+    color:black;
+    text-align: left;
+  
+    line-height:1.5 px ;
+  }
+  .he{
+    margin-top:1px ;
+  }
+  .image-box {
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .image-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .h5 img {
+    width: 40px; /* Adjust size as needed */
+    height: 30px;
+    margin-right: 5px; /* Space between image and text */
+    vertical-align: middle; /* Aligns image with text */
+  }
+  .scroll-container {
+    max-height: 400px; /* Visible height of the scrolling area */
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-width:1000px;
+    overflow-x: hidden;
+    padding: 10px;
+  }
+  h5{
+    margin-right:200px ;
+  }
